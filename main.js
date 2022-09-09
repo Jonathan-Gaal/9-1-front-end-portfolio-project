@@ -1,4 +1,4 @@
-let URL = "https://pursuit-9-1-full-stack-project.herokuapp.com/api/products";
+let URL = "https://pursuit-9-1-full-stack-project.herokuapp.com/api/quotes";
 
 fetch(URL)
     .then(res => res.json())
