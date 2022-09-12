@@ -1,19 +1,29 @@
+body {
+background-image: linear-gradient(to right, rgb(50, 139, 150),
+ rgb(197, 110, 59));;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 10 px;
-    background-image: url(./assets/moroccanTileHeader.jpeg);
-    background-repeat: repeat-x;
-    opacity: 1;
     border-radius: 10px;
+    background-image: url(./assets/elements/moroccanTileHeader.jpeg);
+    background-repeat: repeat-x;
+    opacity: .65;
+    /* border: solid rgb(20, 132, 132); */
     text-align: left;
     height: 100px;
     padding: 25px;
+    /* box-shadow: 20px 20px 20px; */
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    background-image: url(./assets/elements/tile-Background2.jpeg);
+    box-shadow: rgb(128, 128, 128) 20px 20px 20px;
+   
     
 }
 
@@ -24,6 +34,7 @@
     font-weight: 500;
     margin-bottom: 10px;
     text-decoration: underline;
+  
 }
 
 .home-about{
@@ -33,11 +44,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
+   
 }
 
 .home-btn, .about-btn {
     border-radius: 10px;
     background-color: rgb(185, 225, 224);
+    box-shadow: 7px 7px 8px;
+    
     
 }
 
@@ -50,13 +64,29 @@
 }
 
 .main {
-    height: 200px;
-    width: 200px;
-    background-color: green;
+    height: 80%;
+    width: 90%;
+background-image: url(./assets/elements/moroccanArch.jpeg);
+background-repeat: repeat-x;
+background-position: center;
+/* background-attachment: fixed; */
+/* background-size: cover; */
+    background-size: contain;
+    margin-top: 25px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px;
+
+   
 }
 
 .select-quotes-aside {
-    height: 200px;
-    width: 200px;
-    background-color: red;
+    height: 1000px;
+    width: 100%;
+    margin-right: 20px;
+    background-image: url(./assets/elements/berberKilim.jpeg);
+    opacity: 9;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px;
+
 }
