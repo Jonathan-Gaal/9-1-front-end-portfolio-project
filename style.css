@@ -1,0 +1,62 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10 px;
+    background-image: url(./assets/moroccanTileHeader.jpeg);
+    background-repeat: repeat-x;
+    opacity: 1;
+    border-radius: 10px;
+    text-align: left;
+    height: 100px;
+    padding: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.header h1 {
+    font-family: Trebuchet;
+    color: white;
+    font-size: 65px ;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.home-about{
+    margin-top: 20px;
+    height: 50px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.home-btn, .about-btn {
+    border-radius: 10px;
+    background-color: rgb(185, 225, 224);
+    
+}
+
+.home-btn strong, .about-btn strong {
+    font-size: 25px;
+    font-family: 'Trebuchet';
+    color: rgb(187, 77, 77);
+    
+
+}
+
+.main {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+}
+
+.select-quotes-aside {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
