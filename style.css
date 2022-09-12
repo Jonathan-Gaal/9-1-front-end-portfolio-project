@@ -65,7 +65,7 @@ background-image: linear-gradient(to right, rgb(50, 139, 150),
 
 .main {
     height: 80%;
-    width: 100%;
+    width: 90%;
 background-image: url(./assets/elements/moroccanArch2.jpeg);
 background-repeat: repeat-x;
 background-position: center;
