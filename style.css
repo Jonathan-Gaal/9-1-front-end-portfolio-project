@@ -30,12 +30,13 @@ background-image:url(./assets/elements/tile-Background2.jpeg);
 }
 
 .header h1 {
-    font-family: Trebuchet;
+    font-family: fantasy;
     color: white;
     font-size: 40px ;
     font-weight: 500;
     margin-bottom: 10px;
     text-decoration: underline;
+    text-shadow: 2px 2px rgba(187, 77, 77, 0.805);
   
 }
 
@@ -55,7 +56,8 @@ background-image:url(./assets/elements/tile-Background2.jpeg);
     border-radius: 10px;
     background-color: rgb(185, 225, 224);
     box-shadow: 7px 7px 8px;
-    
+    text-shadow: 2px 2px 2px;
+
 }
 
  .about-btn strong {
@@ -120,7 +122,14 @@ main h1 {
         color: rgb(88, 17, 17);
         box-shadow: 7px 7px 8px;
     text-decoration: underline;
+    font-family: cursive;
     opacity: .65;
+    
+}
+
+.select-quotes-aside p:hover{
+    cursor: pointer;
+    color: rgba(187, 77, 77, 0.805);
 }
 
 #imageOptions{
@@ -146,6 +155,8 @@ main h1 {
 .footer h1{
     padding: 20px;
     color: white;
+    text-shadow: 2px 2px rgba(187, 77, 77, 0.805);
+    font-family: cursive;
 }
 
 .selectImage{
