@@ -1,6 +1,7 @@
 body {
-background-image: linear-gradient(to right, rgb(50, 139, 150),
- rgb(197, 110, 59));;
+/* background-image: linear-gradient(to right, rgb(50, 139, 150),
+ rgb(197, 110, 59)); */
+background-image:url(./assets/elements/tile-Background2.jpeg);
 }
 
 .header {
@@ -65,7 +66,7 @@ background-image: linear-gradient(to right, rgb(50, 139, 150),
 }
 
 .main {
-    height: 70%;
+    height: 550px;
     width:90%;
 background-image: url(./assets/elements/moroccanArch2.jpeg);
 background-repeat: repeat-x;
@@ -77,6 +78,7 @@ background-position: center;
     margin-left: 50px;
     border-radius: 10px;
     box-shadow: 20px 20px 20px;
+    /* border: solid red; */
 
    
 }
@@ -90,12 +92,16 @@ margin-right: auto;
 object-fit: contain;
 width: 95%;
 height: 80%;
+}
 
-
+main h1 {
+    color: white;
+    margin-bottom: 2000px;
 }
 
 .select-quotes-aside {
-    height: 1000px;
+    height: 550px;
+    overflow: scroll;
     width: 100%;
     margin-right: 20px;
     background-image: url(./assets/elements/berberKilim.jpeg);
@@ -103,6 +109,11 @@ height: 80%;
     border-radius: 10px;
     box-shadow: 20px 20px 20px;
 
+}
+
+.select-quotes-aside p {
+    color: yellow;
+    text-decoration: underline;
 }
 
 #imageOptions{
@@ -115,7 +126,18 @@ height: 80%;
 
 
 .footer {
-    margin-top: 60px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(./assets/elements/moroccanTileFooter.jpeg);
+        background-repeat: repeat-x;
+        opacity: .65;
+        border-radius: 10px;
+        box-shadow: 20px 20px 20px;
+}
+
+.footer h1{
+    color: white;
 }
 
 .selectImage{
@@ -128,6 +150,8 @@ margin-left: 20px;
         font-family: 'Trebuchet';
         color: rgb(187, 77, 77);
 }
+
+
 
 /* #selectImagesField {
     width: 40%;
