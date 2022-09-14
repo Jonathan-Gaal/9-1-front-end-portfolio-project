@@ -1,0 +1,22 @@
+body {
+    background-image: url(./assets/elements/tile-Background2.jpeg) ;
+}
+
+main {
+    position: fixed;
+    height: 90%;
+    width: 100%;
+    border: solid 5px red;
+    text-align: center;
+    
+}
+
+#archLink {
+    height: 50%;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: black 20px 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+}
