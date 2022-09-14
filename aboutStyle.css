@@ -5,18 +5,45 @@ body {
 main {
     position: fixed;
     height: 90%;
-    width: 100%;
+    width: auto;
     border: solid 5px red;
     text-align: center;
     
 }
 
+h1 {
+background-image: url(./assets/elements/moroccanTileWallpaper.webp);
+color: rgba(187, 77, 77, 0.805);
+text-shadow: 2px 2px rgba(0, 0, 0, 0.805);
+box-shadow: black 20px 20px 20px ;
+}
+
 #archLink {
-    height: 50%;
-    width: 80%;
+    height: auto;
+    width: 50%;
     border-radius: 10px;
     box-shadow: black 20px 20px 20px;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: contain; */
+   
+}
+
+.mainArticle {
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    background-image: linear-gradient(to bottom, rgb(50, 139, 150),
+            rgba(112, 189, 190, 0.64));
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, rgba(90, 10, 37, 0.793),
+            rgba(187, 77, 77, 0.702));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom, rgba(90, 10, 37, 0.943), rgba(187, 77, 77, 0.917));
 }

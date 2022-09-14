@@ -118,9 +118,9 @@ main h1 {
 .select-quotes-aside p {
     padding: 10px;
     border-radius: 10px;
-        background-color: rgb(185, 225, 224);
-        color: rgb(88, 17, 17);
-        box-shadow: 7px 7px 8px;
+    background-color: rgb(185, 225, 224);
+    color: rgb(88, 17, 17);
+    box-shadow: 7px 7px 8px;
     text-decoration: underline;
     font-family: cursive;
     opacity: .65;
