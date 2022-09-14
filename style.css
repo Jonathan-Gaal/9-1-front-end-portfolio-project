@@ -100,7 +100,7 @@ main h1 {
 
 .select-quotes-aside {
     height: 550px;
-    overflow: scroll;
+    overflow-y:scroll;
     width: 100%;
     margin-right: 20px;
     background-image: url(./assets/elements/berberKilim.jpeg);
@@ -170,7 +170,9 @@ a :hover {
     background-image: linear-gradient(to bottom, rgba(90, 10, 37, 0.849), rgba(187, 77, 77, 0.791));
     border-radius: 10px;
 }
-
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom, rgba(90, 10, 37, 0.943), rgba(187, 77, 77, 0.917));
+}
 
 
 /* #selectImagesField {
