@@ -50,24 +50,56 @@ selectImageBtn.addEventListener('click', (e) => {
     if (imageOptions.value === "img3") {
       main.style.backgroundImage = "url('./assets/images/beirut-plaza.jpeg')";
     }
-    if (imageOptions.value === "img4") {
-        main.style.backgroundImage = "url('./assets/images/bukhara.jpeg')";
+   if (imageOptions.value === "img4") {
+    main.style.backgroundImage = "url('./assets/images/bukhara.jpeg')";
     }
-     if (imageOptions.value === "img5") {
+    if (imageOptions.value === "img5") {
+      main.style.backgroundImage = "url('./assets/images/harpist.jpeg')";
+    }
+    if (imageOptions.value === "img6") {
+    main.style.backgroundImage = "url('./assets/images/market-in-jaffa.jpeg')";
+    }
+     if (imageOptions.value === "img7") {
        main.style.backgroundImage = "url('./assets/images/market.jpeg')";
      }
-     if (imageOptions.value === "img6") {
+     if (imageOptions.value === "img8") {
        main.style.backgroundImage = "url('./assets/images/private-meeting.jpeg')";
      }
-     if (imageOptions.value === "img7") {
+     if (imageOptions.value === "img9") {
        main.style.backgroundImage = "url('./assets/images/rug-seller.jpeg')";
      }
-     if (imageOptions.value === "img8") {
+     if (imageOptions.value === "img10") {
        main.style.backgroundImage = "url('./assets/images/still-life.jpeg')";
      }
-     if (imageOptions.value === "img9") {
+     if (imageOptions.value === "img11") {
        main.style.backgroundImage = "url('./assets/images/two-musicians.jpeg')";
      }
+  if (imageOptions.value === "img12") {
+    main.style.backgroundImage = "url('./assets/images/carpet-menders.jpeg')";
+  }
+  if (imageOptions.value === "img13") {
+    main.style.backgroundImage = "url('./assets/images/men-praying.jpeg')";
+  }
+  if (imageOptions.value === "img14") {
+    main.style.backgroundImage = "url('./assets/images/danger-in-desert.jpeg')"
+  }
+  if (imageOptions.value === "img15") {
+    main.style.backgroundImage = "url('./assets/images/people-chatting.jpeg')";
+  }
+  if (imageOptions.value === "img16") {
+    main.style.backgroundImage = "url('./assets/images/the-scribe.jpeg')";
+  }
+  if (imageOptions.value === "img17") {
+    main.style.backgroundImage = "url('./assets/images/desert-rendezvous.jpeg')";
+  }
+  if (imageOptions.value === "img18") {
+    main.style.backgroundImage =
+      "url('./assets/images/arriving-at-mosque.jpeg')";
+  }
+  if (imageOptions.value === "img19") {
+    main.style.backgroundImage = "url('./assets/images/slipper-merchant.jpeg')";
+  }
+  
     
 
 
