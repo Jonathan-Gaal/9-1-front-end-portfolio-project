@@ -1,10 +1,10 @@
-body {
+body{
 /* background-image: linear-gradient(to right, rgb(50, 139, 150),
  rgb(197, 110, 59)); */
 background-image:url(./assets/elements/tile-Background2.jpeg);
 }
 
-.header {
+.header{
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 10 px;
@@ -16,23 +16,24 @@ background-image:url(./assets/elements/tile-Background2.jpeg);
     text-align: left;
     height: 100px;
     padding: 25px;
-    /* box-shadow: 20px 20px 20px; */
+    box-shadow: 20px 20px 20px;
 }
 
-.container {
+.container{
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-image: url(./assets/elements/tile-Background2.jpeg);
     /* box-shadow: rgb(128, 128, 128) 20px 20px 20px; */
     border-radius: 10px;
+    box-shadow: 20px 20px 20px;
    
     
 }
 
-.header h1 {
+.header h1{
     font-family: fantasy;
     color: white;
-    font-size: 40px ;
+    font-size: 2rem ;
     font-weight: 500;
     margin-bottom: 10px;
     text-decoration: underline;
@@ -50,7 +51,7 @@ background-image:url(./assets/elements/tile-Background2.jpeg);
    
 }
 
- .about-btn {
+ .about-btn{
     height: 50%;
     width: 25%;
     border-radius: 10px;
@@ -60,7 +61,7 @@ background-image:url(./assets/elements/tile-Background2.jpeg);
 
 }
 
- .about-btn strong {
+ .about-btn strong{
     font-size: 25px;
     font-family: 'Trebuchet';
     color: rgb(187, 77, 77);
@@ -68,7 +69,7 @@ background-image:url(./assets/elements/tile-Background2.jpeg);
 
 }
 
-.main {
+.main{
     height: 550px;
     width:90%;
 background-image: url(./assets/elements/moroccanArch2.jpeg);
@@ -86,7 +87,7 @@ background-position: center;
    
 }
 
-#mainImage {
+#mainImage{
 width: auto;
 height: auto;
 margin-top: 50px;
@@ -97,12 +98,12 @@ width: 95%;
 height: 80%;
 }
 
-main h1 {
+main h1{
     color: white;
     margin-bottom: 2000px;
 }
 
-.select-quotes-aside {
+.select-quotes-aside{
     height: 550px;
     overflow-y:scroll;
     width: 100%;
@@ -115,7 +116,7 @@ main h1 {
 
 }
 
-.select-quotes-aside p {
+.select-quotes-aside p{
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(185, 225, 224);
@@ -141,7 +142,7 @@ main h1 {
 }
 
 
-.footer {
+.footer{
     height: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -163,14 +164,14 @@ main h1 {
 margin-top: 20px;
 margin-left: 20px;
 }
-#selectImageBtn {
+#selectImageBtn{
     width: 120px;
     font-size: 15px;
         font-family: 'Trebuchet';
         color: rgb(187, 77, 77);
 }
 
-a :hover {
+a :hover{
     background-color: black;
 }
 
@@ -179,13 +180,59 @@ a :hover {
             rgba(112, 189, 190, 0.64));
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
     background-image: linear-gradient(to bottom, rgba(90, 10, 37, 0.793), 
     rgba(187, 77, 77, 0.702));
     border-radius: 10px;
 }
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover{
     background-image: linear-gradient(to bottom, rgba(90, 10, 37, 0.943), rgba(187, 77, 77, 0.917));
+}
+
+@media screen and (max-width: 883px){
+.header h1 {
+font-size: 1.5rem;
+}
+}
+
+/* @media screen and (max-width: 883px){
+    .header h1 {
+            font-size: 1rem;
+        }
+} */
+
+@media screen and (max-width: 414px){
+    .container{
+        grid-template-columns: 1fr;
+        height: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* .header{
+       
+    } */
+    .select-quotes-aside{
+        margin-top: 10%;
+        height: 200px;
+        width: 95%;
+    }
+
+   .about-btn{
+    display: inline-block;
+    font-size: .5rem;
+    width: 100px;
+   }
+
+
+    .main{
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.footer{
+    height: 40%;
 }
 
 

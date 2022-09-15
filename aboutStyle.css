@@ -6,8 +6,9 @@ main {
     position: fixed;
     height: 90%;
     width: auto;
-    border: solid 5px red;
+    /* border: solid 5px red; */
     text-align: center;
+    overflow-y: scroll;
     
 }
 
@@ -16,6 +17,23 @@ background-image: url(./assets/elements/moroccanTileWallpaper.webp);
 color: rgba(187, 77, 77, 0.805);
 text-shadow: 2px 2px rgba(0, 0, 0, 0.805);
 box-shadow: black 20px 20px 20px ;
+font-family: fantasy;
+font-size: 6vh;
+border-radius: 10px;
+padding: 10px;
+opacity: .85;
+}
+
+h2 {
+    background-image: url(./assets/elements/moroccanTileWallpaper.webp);
+        color: rgba(187, 77, 77, 0.805);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.805);
+        box-shadow: black 20px 20px 20px;
+        font-family: fantasy;
+        font-size: 6hv;
+        border-radius: 10px;
+        padding: 5px;
+        opacity: .85;
 }
 
 #archLink {
@@ -30,7 +48,22 @@ box-shadow: black 20px 20px 20px ;
 
 .mainArticle {
     padding: 20px;
-    overflow-y: scroll;
+    font-family: cursive;
+    background-image: linear-gradient(to bottom, rgba(53, 143, 151, 0.77), rgba(187, 77, 77, 0.917));
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px;
+   
+}
+
+.mainArticle p {
+    color: rgba(254, 195, 0, 0.839);
+    font-size: 1rem;
+}
+
+pre {
+    color: rgba(254, 195, 0, 0.839);
+    font-family: cursive;
+    font-size: 1rem;
 }
 
 ::-webkit-scrollbar {
@@ -46,4 +79,14 @@ box-shadow: black 20px 20px 20px ;
 
 ::-webkit-scrollbar-thumb:hover {
     background-image: linear-gradient(to bottom, rgba(90, 10, 37, 0.943), rgba(187, 77, 77, 0.917));
+}
+
+@media screen and (max-width: 912px) {
+    h1 {
+            font-size: 3vh;
+        }
+    
+        h2 {
+            font-size: 2vh;
+        }
 }
