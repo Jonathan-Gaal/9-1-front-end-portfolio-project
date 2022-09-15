@@ -123,6 +123,7 @@ background-image:url(./assets/elements/tile-Background2.jpeg);
 
 .footer{
     height: 100px;
+    
     margin-top: 20px;
     margin-bottom: 20px;
     background-image: url(./assets/elements/moroccanTileFooter.jpeg);
@@ -242,10 +243,10 @@ a :hover{
 
 
 
-}
+
 .footer{
     width: 755px;
     height: 140px;
 }
-
+}
 
