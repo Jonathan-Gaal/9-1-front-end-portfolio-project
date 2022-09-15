@@ -1,27 +1,37 @@
 body{
-/* background-image: linear-gradient(to right, rgb(50, 139, 150),
- rgb(197, 110, 59)); */
+min-width: 100vh;
+min-height: 100vh;
 background-image:url(./assets/elements/tile-Background2.jpeg);
 }
 
 .header{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 10fr .5fr;
+    text-align: center;
     margin: 10 px;
     border-radius: 10px;
     background-image: url(./assets/elements/moroccanTileHeader.jpeg);
     background-repeat: repeat-x;
     opacity: .65;
-    /* border: solid rgb(20, 132, 132); */
-    text-align: left;
     height: 100px;
     padding: 25px;
     box-shadow: 20px 20px 20px;
 }
 
+.header h1 {
+    font-family: fantasy;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-shadow: 2px 2px rgba(187, 77, 77, 0.805);
+
+}
+
 .container{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3.5fr;
     background-image: url(./assets/elements/tile-Background2.jpeg);
     /* box-shadow: rgb(128, 128, 128) 20px 20px 20px; */
     border-radius: 10px;
@@ -30,43 +40,18 @@ background-image:url(./assets/elements/tile-Background2.jpeg);
     
 }
 
-.header h1{
-    font-family: fantasy;
-    color: white;
-    font-size: 2rem ;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-decoration: underline;
-    text-shadow: 2px 2px rgba(187, 77, 77, 0.805);
-  
-}
 
-.home-about{
-    margin-top: 20px;
-    height: 50px;
-    width: 400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-   
-}
-
-.about-btn{
-    display: inline-block;
-}
- .about-btn{
-    height: 50%;
-    width: 25%;
+ #aboutBtn{
     border-radius: 10px;
     background-color: rgb(185, 225, 224);
     box-shadow: 7px 7px 8px;
     text-shadow: 2px 2px 2px;
-
+    
 }
 
- .about-btn strong{
-    font-size: 25px;
-    font-family: 'Trebuchet';
+ #aboutBtn strong{
+    font-size: 1.5rem;
+    font-family: 'fantasy';
     color: rgb(187, 77, 77);
     
 
@@ -75,36 +60,21 @@ background-image:url(./assets/elements/tile-Background2.jpeg);
 .main{
     height: 550px;
     width:90%;
-background-image: url(./assets/elements/moroccanArch2.jpeg);
-background-repeat: no-repeat;
-background-position: center;
-/* background-attachment: fixed; */
-/* background-size: cover; */
+    background-image: url(./assets/elements/moroccanArch2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
     margin-top: 25px;
     margin-left: 50px;
     border-radius: 10px;
     box-shadow: 20px 20px 20px;
-    /* border: solid red; */
+
 
    
 }
 
-#mainImage{
-width: auto;
-height: auto;
-margin-top: 50px;
-margin-left: 2%;
-margin-right: auto;
-object-fit: contain;
-width: 95%;
-height: 80%;
-}
 
-main h1{
-    color: white;
-    margin-bottom: 2000px;
-}
+
 
 .select-quotes-aside{
     height: 550px;
@@ -137,13 +107,10 @@ main h1{
 }
 
 #imageOptions{
-    width: 120px;
-    height: 20px;
-   
+    width: 90%;
+    height: 10%;
     margin-bottom: 5%;
-    
 }
-
 
 .footer{
     height: 100px;
@@ -168,7 +135,7 @@ margin-top: 20px;
 margin-left: 20px;
 }
 #selectImageBtn{
-    width: 120px;
+    width: 90%;
     font-size: 15px;
         font-family: 'Trebuchet';
         color: rgb(187, 77, 77);
@@ -192,32 +159,44 @@ a :hover{
     background-image: linear-gradient(to bottom, rgba(90, 10, 37, 0.943), rgba(187, 77, 77, 0.917));
 }
 
-@media screen and (max-width: 883px){
-.header h1 {
-font-size: 1.5rem;
-}
-}
 
-
-@media screen and (max-width: 414px){
+@media screen and (max-width: 769px){
     body {
         padding-top: 15px;
         
     }
 
+    .header{
+        width: 62%;
+        margin-left: 40px;
+        margin-bottom: 0px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
     .container{
         grid-template-columns: 1fr;
+        margin-left: 5%;
+        margin-right: 12%;
+        margin-bottom: 5%;
         height: 550px;
-        margin-left: auto;
-        margin-right: auto;
         box-shadow: 5px 20px 20px 0px;
+    }
+
+    .main{
+       
+        width: 95%;
+       
     }
 
   
     .select-quotes-aside{
+        display: block;
         margin-top: 10%;
-        height: 200px;
-        width: 95%;
+        height: 80%;
+        width: 80%;
         box-shadow:5px 10px 10px 0px;
     }
 
@@ -233,12 +212,13 @@ font-size: 1.5rem;
     }
     
 
-   .about-btn{
+   #aboutBtn{
     display: inline-block;
     font-size: .1rem;
     width: 100px;
    height: 40px;
    margin-left: 20%;
+   margin-right: 0%;
    }
 
 
@@ -252,37 +232,5 @@ font-size: 1.5rem;
     height: 145px;
 }
 
-@media screen and (max-width: 390px){
-
-.about-btn{
-    margin-left: 0px;
-}
-}
-
-@media screen and (max-width: 393px) {
-
-    .about-btn {
-        margin-left: 0px;
-    }
-}
-
-@media screen and (max-width: 360px) {
-
-    .about-btn {
-        margin-left: 0px;
-        margin-right: 40px;
-    }
-    .home-about{
-        margin-left: 0px;
-        margin-right: 200px;
-    }
-}
-
-
-@media screen and (max-width: 375px){
-    .about-btn {
-       width: 88px;
-    }
-}
 
 

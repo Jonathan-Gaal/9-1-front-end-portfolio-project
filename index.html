@@ -12,10 +12,20 @@
 </head>
 <body>
     <header class="header">
+    
+        
+       
+                
         <h1>Notable Quotables</h1>
-            <!-- <div class="home-about"><button class="home-btn"><a href="./index.html"><strong>Home</strong></a></button>  -->
-            <button class="about-btn"><a href="./about.html"><strong>About</strong></a></button></div>
 
+        <div class="about">
+            <button id="aboutBtn"><a href="./about.html"><strong>About</strong></a></button>
+        </div>
+        
+    </header>
+
+    <div class="container">
+        <aside class="select-quotes-aside">
             <div class="selectImage">
                 <select name="images" id="imageOptions">
                     <option value="img1">At the Bazaar</option>
@@ -28,19 +38,15 @@
                     <option value="img8">Still Life</option>
                     <option value="img9">Two Musicians</option>
                 </select>
-
+            
                 <button id="selectImageBtn">
                     <strong>Select Image</strong>
                 </button>
-            </div>
-            
-
-    </header>
-
-    <div class="container">
-        <aside class="select-quotes-aside">
+                <div>
             <!--p tags from fetch call populate here-->
         </aside>
+
+    
 
         <main class="main">
         <!--background image of main becomes user selected image-->
