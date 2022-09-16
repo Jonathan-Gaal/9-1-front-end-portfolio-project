@@ -25,9 +25,13 @@
     </header>
 
     <div class="container">
+        
         <aside class="select-quotes-aside">
+            <label class="hidden" id="formErrorLabel" for="imageOptions">Please select option from menu below.</label>
+            <br>
             <div class="selectImage">
                 <select name="images" id="imageOptions">
+                    <option value="inputRequest">Select Your Journey!</option>
                     <option value="img1">At the Bazaar</option>
                     <option value="img2">Bedouin Camp at Sunset</option>
                     <option value="img3">Plaza in Beirut</option>
@@ -49,9 +53,11 @@
                     <option value="img19">Slipper Merchant</option>
                 </select>
             
-                <button id="selectImageBtn">
+                <form>
+                <button id="selectImageBtn" type="submit">
                     <strong>Select Image</strong>
                 </button>
+                </form>
                 <div>
             <!--p tags from fetch call populate here-->
         </aside>
@@ -64,7 +70,7 @@
     </div>
 <footer class="footer">
 
-   
+ 
 
 
 </footer>

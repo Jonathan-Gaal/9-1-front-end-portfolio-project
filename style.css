@@ -68,13 +68,17 @@ background-image:url(./assets/elements/tile-Background2.jpeg);
     margin-left: 50px;
     border-radius: 10px;
     box-shadow: 20px 20px 20px;
-
-
-   
 }
 
-
-
+.hidden {
+    display: none;
+}
+#formErrorLabel{
+    background-color: rgb(185, 225, 224);
+    color: rgba(255, 0, 0, 0.718);
+    border-radius: 5px;
+    box-shadow: black 20px 20px 20px;
+}
 
 .select-quotes-aside{
     height: 550px;
@@ -173,16 +177,9 @@ a :hover{
 
 
 @media screen and (max-width: 769px){
-    body {
-        min-width: 100vh;
-        min-height: 100vh;
-    
-    }
-
     .header{
         width: 700px;
         height: 100px;
-       
     }
 
     .header h1 {
@@ -229,9 +226,6 @@ a :hover{
         height: 20px;
     }
 
-
-    
-
    #aboutBtn{
     display: inline-block;
     font-size: .1rem;
@@ -240,9 +234,6 @@ a :hover{
    margin-left: 20%;
    margin-right: 10px;
    }
-
-
-
 
 .footer{
     width: 755px;

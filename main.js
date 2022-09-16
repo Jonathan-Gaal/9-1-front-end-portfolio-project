@@ -3,43 +3,53 @@ let URL = 'https://pursuit-9-1-full-stack-project.herokuapp.com/api/quotes';
 main = document.querySelector('.main')
 imageOptions = document.querySelector('#imageOptions');
 mainImage = document.querySelector('#mainImage');
-selectImageBtn = document.querySelector('#selectImageBtn');
+form = document.querySelector('form');
 selectQuotesAside = document.querySelector(".select-quotes-aside");
 header = document.querySelector('.header');
 footer = document.querySelector('.footer');
+formErrorLabel = document.querySelector("#formErrorLabel");
 
-
-
-fetch(URL)
+fetchData(URL);
+function fetchData(URL) {
+  fetch(URL)
     .then(res => res.json())
-  .then((resJson) => {
-      
-    resJson.forEach((el) => {
-      const asideQuoteP = document.createElement("p");
-      asideQuoteP.innerText = el.quote;
-      selectQuotesAside.append(asideQuoteP);
-      asideQuoteP.addEventListener('click', ()=> {
-        const quoteH1 = document.createElement('h1');
-        quoteH1.innerText = `${el.quote}  -  ${el.author}`;
-        footer.innerHTML = '';
-        footer.append(quoteH1);
-        quoteH1.style.fontSize = '20px'
+    .then((resJson) => {
+      console.log(resJson);
+      resJson.forEach((el) => {
+        const asideQuoteP = document.createElement("p");
+        asideQuoteP.innerText = `${el.quote}`
+        selectQuotesAside.append(asideQuoteP);
+        asideQuoteP.addEventListener('click', () => {
+          const quoteH1 = document.createElement('h1');
+          quoteH1.innerText = `${el.quote}  -  ${el.author}`;
+          footer.innerHTML = '';
+          footer.append(quoteH1);
+          quoteH1.style.fontSize = '20px'
 
-      })
-    });
+        })
+      });
 
     })
     .catch((err) => {
       console.error(err)
-      
-      
     })
+}
 
-    console.log(imageOptions.value)
 
-
-selectImageBtn.addEventListener('click', (e) => {
+function turnOnHidden() {
+  formErrorLabel.classList.toggle("hidden");
+}
     
+
+
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  
+    if (imageOptions.value === "inputRequest") {
+      turnOnHidden();
+      setTimeout(turnOnHidden, 3000);
+    }
     if (imageOptions.value === "img1") {
         main.style.backgroundImage =
           "url('./assets/images/at-the-bazaar.jpeg')";
@@ -99,10 +109,6 @@ selectImageBtn.addEventListener('click', (e) => {
   if (imageOptions.value === "img19") {
     main.style.backgroundImage = "url('./assets/images/slipper-merchant.jpeg')";
   }
-  
-    
-
-
 
     })
 
