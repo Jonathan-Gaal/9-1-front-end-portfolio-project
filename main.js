@@ -1,37 +1,55 @@
 let URL = 'https://pursuit-9-1-full-stack-project.herokuapp.com/api/quotes';
 
-main = document.querySelector('.main')
-imageOptions = document.querySelector('#imageOptions');
-mainImage = document.querySelector('#mainImage');
-form = document.querySelector('form');
-selectQuotesAside = document.querySelector(".select-quotes-aside");
-header = document.querySelector('.header');
-footer = document.querySelector('.footer');
-formErrorLabel = document.querySelector("#formErrorLabel");
 
-fetchData(URL);
+
+const main = document.querySelector('.main')
+const imageOptions = document.querySelector('#imageOptions');
+const mainImage = document.querySelector('#mainImage');
+const form = document.querySelector('form');
+const selectQuotesAside = document.querySelector(".select-quotes-aside");
+const header = document.querySelector('.header');
+const footer = document.querySelector('.footer');
+const formErrorLabel = document.querySelector("#formErrorLabel");
+let quoteH1 = document.querySelector('#quoteH1');
+
+fetch(URL) 
+  .then(res => res.json())
+  .then((resJson) => {
+    console.log(resJson)
+
+    quoteH1.innerText = `Select an image and click the button to see a list of quotes like this one: ---- ${resJson[0].quote} - ${resJson[0].author} ---- then click one to add it to this section!`
+      quoteH1.style.fontSize = "20px";
+    
+  })
+  .catch((err) => {
+    console.error(err);
+})
+
+
+
 function fetchData(URL) {
   fetch(URL)
     .then(res => res.json())
     .then((resJson) => {
       console.log(resJson);
-      resJson.forEach((el) => {
-        const asideQuoteP = document.createElement("p");
-        asideQuoteP.innerText = `${el.quote}`
-        selectQuotesAside.append(asideQuoteP);
-        asideQuoteP.addEventListener('click', () => {
-          const quoteH1 = document.createElement('h1');
-          quoteH1.innerText = `${el.quote}  -  ${el.author}`;
-          footer.innerHTML = '';
-          footer.append(quoteH1);
-          quoteH1.style.fontSize = '20px'
-
-        })
-      });
-
+      if (imageOptions.value !== "inputRequest") {
+        resJson.forEach((el) => {
+          const asideQuoteP = document.createElement("p");
+          asideQuoteP.innerText = `${el.quote}`
+          selectQuotesAside.append(asideQuoteP);
+          asideQuoteP.addEventListener('click', () => {
+            const quoteH1 = document.createElement('h1');
+            quoteH1.innerText = `${el.quote}  -  ${el.author}`;
+            footer.innerHTML = '';
+            footer.append(quoteH1);
+            quoteH1.style.fontSize = '20px'
+          })
+        
+        });
+      }
     })
     .catch((err) => {
-      console.error(err)
+      console.error(err);
     })
 }
 
@@ -45,14 +63,15 @@ function turnOnHidden() {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
+
+  fetchData(URL);
   
     if (imageOptions.value === "inputRequest") {
       turnOnHidden();
       setTimeout(turnOnHidden, 3000);
     }
-    if (imageOptions.value === "img1") {
-        main.style.backgroundImage =
-          "url('./assets/images/at-the-bazaar.jpeg')";
+    if (imageOptions.value === "img1" && imageOptions.value) {
+      main.style.backgroundImage = "url('./assets/images/at-the-bazaar.jpeg')";
     }
     if (imageOptions.value === "img2") {
          main.style.backgroundImage = "url('./assets/images/bedu-camp-sunset.jpeg')"
